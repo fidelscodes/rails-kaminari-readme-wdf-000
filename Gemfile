@@ -34,7 +34,7 @@ gem 'faker'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry-rails'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'database_cleaner'

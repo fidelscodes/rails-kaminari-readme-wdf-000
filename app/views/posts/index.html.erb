@@ -1,4 +1,10 @@
 <h1>Blog Posts!</h1>
+
+<%# kaminari helper for pagination %>
+
+<%= page_entries_info @posts %>
+<%= paginate @posts, window: 2 %> <%# show only the next two pages next to current one %>
+
 <% @posts.each do |post| %>
   <div>
     <p><%= link_to post.title, post_path(post) %><br>
